@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/media/ic_ai_image.png" type="image/x-icon">
+    <title>AI Image Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+
+  <body>
+    <div class="overlay">
+      <div id="previewContainer">
+        <img src="/media/ic_ai_image.png" alt="Preview" id="imgPreview" />
+      </div>
+    </div>
+    <main>
+      <div id="header">
+        <img src="/media/ic_ai_image.png" id="headerImage" />
+        <h1>AI Image Generator</h1>
+        <button type="button" id="btnNightMode">
+          <img id = "btnNightModeImage" src="/media/night-mode.png" />
+        </button>
+      </div>
+
+      <div id="textBox">
+        <textarea
+          type="text"
+          id="inputText"
+          placeholder="Describe your imagination in detail... "
+        ></textarea>
+        <button id="GenerateTextBtn">
+          <img src="/media/dice.png" />
+        </button>
+      </div>
+      <div id="options">
+        <select id="optionAspectRatio">
+          <option value="" selected disabled>Aspect Ratio</option>
+          <option value="1/1">Square (1:1)</option>
+          <option value="16/9">Landscape (16:9)</option>
+          <option value="9/16">Potrait (9:16)</option>
+        </select>
+        <select id="optionImageCount">
+          <option value="" selected disabled>Image Count</option>
+          <option value="1">1 Image</option>
+          <option value="2">2 Images</option>
+          <option value="3">3 Images</option>
+        </select>
+
+        <button type="submit" id="generateImageBtn">
+          <img src="/media/generate.png" />
+          <span>Generate</span>
+        </button>
+      </div>
+
+      <div id="error-box" class="hidden">
+        <p id="error-message"></p>
+      </div>
+
+      <div class="gallery-grid" id="gallery-grid"></div>
+    </main>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
