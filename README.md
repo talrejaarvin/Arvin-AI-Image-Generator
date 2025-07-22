@@ -109,11 +109,6 @@ npm run preview
 
 ---
 
-## 📄 License
-MIT
-
----
-
 ## 🙋 FAQ
 **Q: My API keys aren't working?**
 - Double-check your `.env` file and restart the dev server after changes.
