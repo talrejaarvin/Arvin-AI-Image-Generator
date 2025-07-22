@@ -7,10 +7,10 @@ A modern web application for generating AI-powered images from creative text pro
 ## 📸 Screenshots
 
 ### Light Mode
-![Light Mode Screenshot](public/media/day.png)
+![Light Mode Screenshot](public/media/day-result.png)
 
 ### Dark Mode
-![Dark Mode Screenshot](public/media/night.png)
+![Dark Mode Screenshot](public/media/night-result.png)
 
 *Light and Dark mode UI previews*
 
@@ -106,11 +106,6 @@ npm run preview
 3. Commit your changes
 4. Push to your branch
 5. Open a Pull Request
-
----
-
-## 📄 License
-MIT
 
 ---
 
